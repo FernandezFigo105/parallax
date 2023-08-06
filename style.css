@@ -170,7 +170,7 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 40px; /* Adjust the gap between dots as needed */
+   /* Adjust the gap between dots as needed */
   z-index: 1;
 }
 
@@ -183,14 +183,31 @@ html{
   height: 40px;
   border-radius: 50%;
   margin-left: 0px;
+  margin-bottom: 0px;
 
    /* Set the default fill color for the icons */
   transition: background-color 0.3s ease; /* Add a smooth transition effect for the background color */
   filter: invert(100%); 
   
 }
+.scroll-indicator a {
+  /* Your existing styles for the icon links */
+  display: inline-block; /* Ensure the anchor tags have a block layout */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  line-height: 0; /* Remove any default line height */
+}
 
 .scroll-indicator img:hover {
   background-color: #fff; 
 }
 
+.scroll-indicator .line {
+  display: block;
+  background-color: #fff; /* Set the color of the lines */
+  width: 2px; /* Set the width of the lines */
+  height: 30px; /* Set the height of the lines */
+  margin: 0 auto; /* To center the lines horizontally */
+}
+
+/* Style the lines except for the last one */
