@@ -56,8 +56,8 @@ header{
     display: flex;
     justify-content:center;
     align-items:center;
-    height:120vh;
-    /* overflow: hidden; */
+    min-height:120vh;
+    /* overflow-y: hidden; */
 }
 
 #text{
@@ -85,7 +85,7 @@ header{
 
 .sec h2{
     text-align: center;
-    font-size:3em;
+    font-size:3rem;
     color:#fff;
     margin-bottom:5px ;
   
@@ -211,3 +211,19 @@ html{
 }
 
 /* Style the lines except for the last one */
+/* style.css */
+/* Add this CSS to create the transition effect */
+/* style.css */
+.card-transition {
+  opacity: 0;
+  transform: translateX(-50%) scale(0.8);
+  filter: blur(10px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, filter 0.5s ease-out;
+  
+}
+
+.card-transition.active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  filter: blur(0);
+}

@@ -20,6 +20,36 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// indicator
+
+
+
+// script.js
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+  const cardElements = document.querySelectorAll(".card-transition");
+
+  function handleIntersect(entries, observer) {
+      entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+              setTimeout(() => {
+                  entry.target.classList.add("active");
+              }, index * 300); // Adjust the delay as needed
+          } else {
+              entry.target.classList.remove("active");
+          }
+      });
+  }
+
+  const options = {
+      threshold: 0.3, // Adjust this value as needed
+  };
+
+  const observer = new IntersectionObserver(handleIntersect, options);
+
+  cardElements.forEach((cardElement) => {
+      observer.observe(cardElement);
+  });
+});
+
 
 
