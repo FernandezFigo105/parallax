@@ -46,6 +46,7 @@
         <img src="assets\images\hill5.png" id="hill5">
         <img src="assets\images\tree.png" id="tree">
         <h2 id="text">SIE CLUB</h2>
+        
         <img src="assets\images\leaf.png" id="leaf">
         <img src="assets\images\plant.png" id="plant">
     </section>
@@ -54,7 +55,7 @@
         <h2>Our Mission</h2>
         <div class="container">
           <div id="card1" class="card card-transition"  >
-            <img src="assets/images/card1.jpg" alt="Mission 1">
+            <img src="assets/images/card1.png" alt="Mission 1">
             <div class="intro">
               <p>To instill a sense of responsibility for the environment and a personal commitment to protect and preserve the environment.</p>
             </div>
@@ -73,13 +74,34 @@
           </div>
         </div>
       </section>
+      <div class="container2"><canvas id="canvas" width="450" height="500"></canvas>
+        <div class="flex-item">
+          <h2>About Us</h2>
+        <p>Amidst the thickly populated concrete jungles of the suburban Kurla, <br>of Mumbai district, DBIT is an oasis of greenery. With a huge football <br>ground and abundant lush green trees it's full of serenity and is a home <br>to a variety of birds. With our Don Bosco values, we the students, faculty <br>& staff of DBIT pledge to make our campus carbon neutral, create <br>environmental awareness and promote sustainability with sustainable lifestyle <br>using innovative engineering.</p>
+     </div>
+    </div>
+    <div class="container3">
+      <h1>Meet our team</h1>
+      
+      <img src="assets\images\Shivaam.webp" id="Shivaam">
+      <img src="assets\images\Nitin.webp" id="Nitin">
+      <img src="assets\images\Malvika.webp" id="Malvika">
+      <img src="assets\images\riona.webp" id="Riona">
+    </div>
       
           
          
-      
-  
-      
-      
+      <script src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+      <script>
+          const r = new rive.Rive({
+              src: "../earth.riv",
+              // Or the path to a public Rive asset
+              // src: '/public/example.riv',
+              canvas: document.getElementById("canvas"),
+              autoplay: true,
+              
+          });
+          </script>
     <script defer src="script.js"></script>
 </body>
 </html>
