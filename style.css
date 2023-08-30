@@ -305,9 +305,7 @@ canvas {
 
 .container3 img:hover {
   filter: grayscale(0%);
-  border: linear-gradient(to right, #09f357,#003329); /* Change colors as needed */
   
-  border-width: 9px;
 }
 
 
